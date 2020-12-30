@@ -1,0 +1,64 @@
+.sec3
+	padding-top: 70px
+	background: #e8ecf3
+	overflow: hidden
+	.tab
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 30px
+		overflow-x: auto
+		&::-webkit-scrollbar
+			height: 5px
+		@media screen and ( max-width: 1024px )
+			padding-bottom: 10px
+			justify-content: flex-start
+	.tab-item
+		display: flex
+		margin-right: 5px
+		white-space: nowrap
+		a
+			padding: 15px
+			background-color: white
+			font-size: r(18px)
+			transition: .3s ease-in-out
+			&:hover
+				background-color: #283a97
+				color: white
+	.wrap-product
+		width: 100%
+		background-color: white
+		margin-top: 40px
+		.row
+			margin-left: -1px
+			margin-right: -1px
+		.col-12.col-sm-6.col-lg-4.col-xl-3
+			padding-left: 1px
+			padding-right: 1px
+	.box-pd
+		position: relative
+		margin-bottom: 2px
+	.img-pd
+		+img-ratio(390/480)
+	.title-pd
+		position: absolute
+		top: 10%
+		left: 10%
+		color: white
+		a
+			color: white
+			font-size: r(30px)
+			text-transform: uppercase
+		p
+			padding-right: r(100px)
+			margin-top: r(15px)
+	.btn-box
+		position: absolute
+		bottom: 10%
+		left: 10%
+		.btn-seemore
+			background: transparent
+			border: 1px solid white
+			&:hover
+				background: #ee202e
+				border: none

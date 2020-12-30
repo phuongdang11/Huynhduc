@@ -1,0 +1,89 @@
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+body
+	img
+		width: 100%
+.container
+	max-width: 1260px
+.space
+	padding-bottom: 50px
+	
+.icon-button
+	.swiper-button-prev,.swiper-button-next
+		transition: .3s all  ease-in-out
+		background-image: none
+		width: r(60px)
+		height: r(60px)
+		border: 2px solid #ffffff
+		display: flex
+		justify-content: center
+		align-items: center
+		&::after
+			display: none
+	.swiper-button-prev
+		background-image: none
+		font-size: 30px
+		&::before
+			content: "\ea64"
+			font-family: "remixicon"
+			color: #ffffff
+			font-size: r(24px)
+			font-weight: 400
+			transition: .3s all ease-in-out
+	.swiper-button-next
+		background-image: none
+		font-size: 30px
+		&::before
+			content: "\ea6e"
+			font-family: "remixicon"
+			color: #ffffff
+			font-size: r(24px)
+			font-weight: 400
+			transition: .3s all ease-in-out
+	@media screen and ( max-width: 1024px )
+		position: relative
+		align-items: center
+		display: flex
+		justify-content: center
+		top: r(40px)
+		padding-bottom: r(40px)
+		width: 100%
+		height: auto
+		.swiper-button-prev,.swiper-button-next
+			position: static
+			width: r(40px)
+			height: r(40px)
+			&::before
+				font-size: r(18px)
+		.swiper-button-prev
+			&:hover
+				&::before
+					transform: translateX(-3px)
+		.swiper-button-next
+			margin-left: 10px
+			&:hover
+				&::before
+					transform: translateX(3px)
+	@media screen and ( max-width: 575.98px )
+		top: r(40px)
+		padding-bottom: r(30px)
+		width: 100%
+		height: auto
+		.swiper-button-prev,.swiper-button-next
+			position: static
+			width: r(35px)
+			height: r(35px)
+			&::before
+				font-size: r(15px)
+		.swiper-button-prev
+			&:hover
+				&::before
+					transform: translateX(-3px)
+		.swiper-button-next
+			margin-left: 10px
+			&:hover
+				&::before
+					transform: translateX(3px)

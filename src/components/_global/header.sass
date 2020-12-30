@@ -1,0 +1,287 @@
+header
+	width: 100%
+	.none
+		transform: translateY(-100%) !important
+	.no-none
+		transform: translateY(0) !important
+	.header-top
+		width: 100%
+		height: 80px
+		display: flex
+		position: fixed
+		z-index: 999
+		transform: translateY(0)
+		transition: all .4s ease
+		justify-content: center
+		align-items: center
+		background-color: #ffffff
+		@media screen and ( max-width: 1024.1px )
+			display: flex
+			justify-content: flex-start
+			background-color: #283a97
+			transform: translateY(0) !important
+	em
+		font-style: normal
+	.menu-items-left
+		list-style: none
+		display: flex
+		li
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			a
+				@media screen and ( max-width: 1024.1px )
+					color: white
+					font-weight: 600
+		@media screen and ( max-width: 1024.1px )
+			flex-direction: column
+			display: flex
+			justify-content: center
+			color: white
+		
+	.menu-items-right
+		list-style: none
+		display: flex
+		li
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			a
+				@media screen and ( max-width: 1024.1px )
+					color: white
+					font-weight: 600
+		@media screen and ( max-width: 1024.1px )
+			flex-direction: column
+			display: flex
+			justify-content: center
+			color: white
+	.wrap
+		display: flex
+		justify-content: space-between
+		@media screen and ( max-width: 1024.1px )
+			a
+				color: white !important
+		a
+			color: #283a97
+			font-size: r(16px)
+			font-weight: 600
+	.wrap-left
+		flex: 0 0 45%
+		display: flex
+		align-items: center
+		@media screen and ( max-width: 1024.1px )
+			display: none
+	.wrap-center
+		flex: 1
+	.logo
+		margin-top: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		@media screen and ( max-width: 1024px )
+			justify-content: flex-start
+		img
+			width: 90%
+			@media screen and ( max-width: 1024.1px )
+				filter: brightness(30)
+	.wrap-right
+		flex: 0 0 45%
+		padding-left: 30px
+		display: flex
+		align-items: center
+		@media screen and ( max-width: 1024.1px )
+			display: none
+	.searchbox
+		font-size: r(16px)
+		color: #9a9999
+		margin-left: 30px
+		margin-right: 30px
+		cursor: pointer
+		@media screen and ( max-width: 1024.1px )
+			margin-left: 0
+			color: white
+			margin-top: 10px
+	.openBtn 
+		background: #f1f1f1
+		border: none
+		padding: 10px 15px
+		font-size: 20px
+		cursor: pointer
+	.overlay 
+		height: 100%
+		width: 100%
+		display: none
+		position: fixed
+		z-index: 1
+		top: 0
+		left: 0
+		background-color: rgb(0,0,0)
+		background-color: rgba(0,0,0, 0.9)	
+	.overlay-content 
+		top: 46%
+		width: 80%
+		text-align: center
+		margin-top: 30px
+		margin: auto
+	.overlay .closebtn 
+		position: absolute
+		top: 1px
+		right: 45px
+		font-size: 60px
+		cursor: pointer
+		color: white
+	.overlay input[type=text] 
+		padding: 15px
+		font-size: 17px
+		border: none
+		float: left
+		width: 80%
+		background: white
+	.overlay button 
+		float: left
+		width: 20%
+		padding: 15px
+		background: #ddd
+		font-size: 17px
+		border: none
+		cursor: pointer
+	.language-wrapper
+		display: flex
+		justify-content: flex-start
+	.language
+		margin-top: 2px
+		display: flex
+		@media screen and ( max-width: 1024.1px )
+			color: white
+			margin-top: 50px
+		a
+			margin-right: 5px
+			color: #9a9999
+			font-weight: 500
+			font-size: r(13px)
+			margin-right: 20px
+			@media screen and ( max-width: 1024.1px )
+				margin-right: 5px
+		span
+			margin-right: 2px
+			@media screen and ( max-width: 1024.1px )
+				color: white
+		em
+			@media screen and ( max-width: 1024.1px )
+				color: white
+		p
+			margin-top: -3px
+	.right-img
+		margin-right: 10px
+		margin-top: -2px	
+		@media screen and ( max-width: 1024.1px )
+			margin-right: 5px
+	.hotline-wrapper
+	.hotline
+		margin-left: 30px
+		display: flex
+		color: #9a9999
+		@media screen and ( max-width: 1024.1px )
+			margin-left: 0
+			margin-top: 30px
+			justify-content: center
+			align-content: center
+		p
+			font-size: r(15px)
+			margin-top: 1px
+			@media screen and ( max-width: 1024.1px )
+				color: white
+		a
+			font-size: r(16px)
+			font-weight: 700
+			color: red
+			margin-top: 1px
+			@media screen and ( max-width: 1024.1px )
+				color: red !important
+				font-weight: 700
+	.hamb 
+		background: transparent
+		width: 50px
+		height: 50px
+		position: relative
+		margin-top: 15px
+		cursor: pointer
+		overflow: hidden
+		@media screen and ( min-width: 1024.1px )
+			display: none
+	.mobile-wrapper
+		position: absolute
+		width: 80%
+		height: 100%
+		background: #0a185fcc
+		left: -80%
+		top: 80px
+		transition: all .8s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+		padding-left: 20px
+		padding-top: 30px
+		padding-bottom: 50px
+		@media screen and ( max-width: 1024px )
+			height: auto
+	.mobile-wrapper ul 
+		list-style-type: none
+		font-size: r(18px)
+		color: white
+	.active 
+		left: 0
+		top: 80px
+	.hamb span i 
+		width: 30px
+		height: 4px
+		border-radius: 30px
+		background: white
+		position: absolute
+		left: 10px
+	.span1 .span2 .span3 i 
+		position: absolute
+	.hamb .spanf:nth-child(1) i 
+		top: 20%
+		transition: all .5s ease-in-out
+	.hamb .spans:nth-child(2) i 
+		top: 40%
+		transition: all .5s ease-in-out
+	.hamb .spant:nth-child(3) i 
+		transition: all .5s ease-in-out
+		top: 60%
+	.span1:nth-child(1) i 
+		top: 40% !important
+		transform: rotate(45deg)
+	.span2:nth-child(2) i 
+		left: 130px
+	.span3:nth-child(3) i 
+		top: 40% !important
+		transform: rotate(-45deg)
+
+	.header-bottom
+		width: 100% 
+		height: 60px 
+		background-color: #000936
+		display: flex
+		position: fixed
+		z-index: 999
+		// top: -100% 
+		transform: translateY(-100%)
+		transition: all .4s ease
+		justify-content: center
+		align-items: center
+		@media screen and ( max-width: 1024px )
+			display: none
+		.menu-items-left
+			li
+				a
+					color: white
+		.menu-items-right
+			li
+				a
+					color: white
+		.wrap-center
+			display: flex
+			justify-content: center
+			align-items: center
+		.logo
+			width: 60%
+

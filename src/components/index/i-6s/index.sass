@@ -1,0 +1,125 @@
+.sec6s
+	background-image: url(../img/index/bg-sec6.png)
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 70px 0
+	.title-block
+		color: white
+	.items-i6
+		.row
+			margin-left: -15px
+			margin-right: -15px
+		.col-12.col-lg-6
+			padding-right: 15px 
+			padding-left: 15px
+	.left
+		display: flex
+		@media screen and (max-width: 1024px )
+			display: block
+		.row
+			margin-left: 0
+			margin-right: 0
+		.col-12.col-lg-6
+			padding-right: 0
+			padding-left: 0
+		.items-left
+			a
+				+img-ratio(360/300)
+		.content-left
+			width: 100%
+			min-height: 360px
+			display: flex
+			flex-direction: column
+			padding: 30px
+			background: rgba(255, 255, 255, 0.9)
+			@media screen and ( max-width: 1024px )
+				height: auto
+			a
+				margin-top: r(10px)
+				font-size: r(18px)
+				color: black
+				font-weight: 600
+			p
+				margin-top: r(10px)
+				font-size: r(14px)
+				overflow: hidden
+				text-overflow: ellipsis
+				-webkit-line-clamp: 3
+				-webkit-box-orient: vertical
+				display: -webkit-box
+			.btn-box
+				margin-top: 55px
+				justify-content: flex-start
+
+
+	// .left
+	// 	.row
+	// 		margin-left: 0
+	// 		margin-right: 0
+	// 	.col-12.col-lg-6
+	// 		padding-right: 0
+	// 		padding-left: 0
+	// 	.items-left
+	// 		height: 100%
+	// 	.img
+	// 		height: 100%
+	// 		background: #ccc
+	// 		img
+	// 			height: 100%
+	// 			object-fit: cover
+	// .content-left
+	// 	background: rgba(255, 255, 255, 0.9)
+	// 	font-size: r(12px)
+	// 	height: 100%
+	// 	padding: 30px
+	// 	display: flex
+	// 	flex-direction: column
+	// 	a
+	// 		margin-top: r(10px)
+	// 		font-size: r(18px)
+	// 		color: black
+	// 		font-weight: 600
+	// 	p
+	// 		margin-top: r(10px)
+	// 		font-size: r(14px)
+	// 		overflow: hidden
+	// 		text-overflow: ellipsis
+	// 		-webkit-line-clamp: 3
+	// 		-webkit-box-orient: vertical
+	// 		display: -webkit-box
+	// 	.btn-box
+	// 		margin-top: 55px
+	// 		justify-content: flex-start
+	.right
+		.row
+			marign-left: -15px
+			margin-right: -15px
+		.col-12.col-lg-6
+			padding-left: 15px
+			padding-right: 15px
+		.item-ri
+			@media screen and ( max-width: 576px )
+				margin-top: 50px
+		.img-item-ri
+			a
+				+img-ratio(230/285)
+				@media screen and ( max-width: 1200px)
+					+img-ratio(231/285)
+				@media screen and (max-width: 1140px)
+					+img-ratio(233/285)
+				@media screen and (max-width: 1100px)
+					+img-ratio(234/285)
+	.content-right
+		+img-ratio(130/285)
+		.test
+			position: absolute
+			display: flex
+			flex-direction: column
+			padding: 15px
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background: rgba(255, 255, 255, 0.9)
+			a
+				font-weight: 700

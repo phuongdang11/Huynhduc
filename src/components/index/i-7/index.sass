@@ -1,0 +1,62 @@
+.sec7
+	background-image: url(../img/index/bg-sec7.png)
+	background-repeat: no-repeat
+	background-size: cover
+	padding-top: 55px
+	padding-bottom: 50px
+	.title-block
+		justify-content: flex-start
+		display: flex
+		color: white
+	.wrap-form
+		padding-right: 50px
+		label
+			font-size: r(18px)
+			color: white
+			padding: 10px 0
+		input[type="text"]
+			width: 100%
+			background: white
+			padding-left: 15px
+			height: 50px
+			border-radius: 5px
+			outline: 0
+			border: none
+			&::placeholder
+				color: #999999
+				font-size: r(14px)
+	.form-group
+		margin-bottom: 15px
+	.frm-btn
+		input[type="submit"]
+			color: #283a97
+			text-transform: uppercase
+			font-size: r(14px)
+			transition: .3s
+			display: flex
+			height: 50px
+			color: white
+			background: #ee202e
+			letter-spacing: r(2px)
+			padding-left: 50px
+			border: none
+			outline: 0
+			justify-content: center
+			align-items: center
+			padding-right: r(40px)
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			background-image: url(../img/index/icon-right.png)
+			background-repeat: no-repeat
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			transition: all .3s ease
+			background-size: 100%
+			width: 30px
+			height: 8px
+		&:hover
+			&::before
+				left: 10px

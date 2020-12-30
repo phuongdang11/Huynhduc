@@ -1,0 +1,83 @@
+.sec2
+	padding-top: 70px
+	padding-bottom: 85px
+	.title-block
+		color: white
+		padding-bottom: 40px
+	.item-sec2
+		@media screen and ( max-width: 1200px )
+			display: flex
+			justify-content: center
+		.box
+			width: 285px
+			height: 360px
+			background-color: grey
+			border: 0
+			outline: 0
+			position: relative
+			@media screen and ( max-width:  1024px)
+				margin-bottom: 30px
+			&:hover
+				.content-box-hvr
+					visibility: visible
+					opacity: 1
+				.content-box
+					visibility: hideen
+					opacity: 0
+		.content-box
+			position: absolute
+			bottom: -2%
+			width: 105%
+			transition: all .3s ease-in-out
+			left: -6px
+		.content-box-hvr
+			position: absolute
+			visibility: hidden
+			opacity: 0
+			transition: all .3s ease-in-out
+			bottom: 0
+			width: 100.4%
+			left: 0
+		.text-inbox
+			position: absolute
+			bottom: 12%
+			left: 8%
+			a
+				font-size: r(24px)
+				padding-right: 20px
+				color: white
+		.col-12.col-md-6.col-lg-4.col-xl-3
+			display: flex
+			justify-content: center
+	.img-box
+		a
+			+img-ratio(360/285)
+			overflow: hidden
+	.text-box
+		position: absolute
+		width: 285px
+		height: 150px
+		background-color: #283a97
+		transition: .3s ease-in-out
+		bottom: 0
+		left: 0
+		&::before
+			border-bottom: 30px solid #283a97
+			border-left: 143px solid  transparent 
+			border-right: 143px solid transparent
+			transition: .3s ease-in-out
+			content: ""
+			height: 0
+			left: 0
+			position: absolute
+			bottom: 150px
+			width: 100%
+		&:hover
+			background-color: red
+			&::before
+				border-bottom: 30px solid red
+	.text-box
+		padding: 20px
+		background-color: none
+		color: white
+		font-size: r(24px)
